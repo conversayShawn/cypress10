@@ -1,0 +1,16 @@
+name: v10
+# run workflow on git push and git pull
+on: [push, pull_request]
+jobs:
+  cypress-run:
+    # OS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        # checks-out your repository so your workflow can access it
+        uses: actions/checkout@v2
+      - name: Run Cypress
+        # GitHub Action for running Cypress end-to-end tests
+        uses: cypress-io/github-action@v4
+        with:
+          config-file: cypress.config.js
