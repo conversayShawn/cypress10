@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/conversaShawn/cypress10/issues"
   },
-  "homepage": "https://github.com/conversaShawn/cypress10#readme"
+  "homepage": "https://github.com/conversaShawn/cypress10#readme",
+  "devDependencies": {
+    "cypress": "^10.0.3"
+  }
 }
